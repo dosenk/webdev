@@ -1,41 +1,156 @@
+@font-face {
+    font-family: Roboto; /* Имя шрифта */
+    src: url(/assets/fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+
 body {
     margin: 0;
     padding: 0;
-    width: 1420px;
+    width: 1600px;
+    font-family: Roboto;
 }
 
 header {
     position: absolute;
-    width: 1420px;
+    width: 1600px;
     z-index: 1000;
 }
 
 menu {
     margin: 0 auto;
-    width: 580px;
+    padding: 0;
+    width: 597px;
     height: 95px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
 menu a {
+    height: 20px;
     color: #ffffff;
     text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+}
+
+menu a:first-child {
+    width: 38px;
+}
+
+menu a:nth-child(2) {
+    width: 54px;
+    margin-left: 84px;
+}
+
+menu a:nth-child(3) {
+    margin-left: 100px;
+}
+
+menu a:nth-child(4) {
+    width: 52px;
+    margin-left: 100px;
+}
+
+menu a:nth-child(5) {
+    width: 26px;
+    margin-left: 84px;
 }
 
 menu a:hover {
     cursor: pointer;
-    color: grey;
+    color: #00AFDB;
 }
 
 .active {
     text-decoration: underline;
+    height: 21px;
+    opacity: 1;
 }
 
+/*************** main ****************/
+
 main {
-    width: 100%;
+    width: 1600px;
     position: absolute;
     height: 744px;
-    background-image: url(/assets/notebook.png);
+    background-image: url(/assets/images/notebook.png);
+}
+
+.main-info {
+    position: relative;
+    top: 168px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+    font-style: normal;;
+}
+.main-info_tagline {
+    width: 730px;
+    text-align: justify;
+}
+.main-info_tagline p{
+    /* padding: ; */
+    width: 730px;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* text-align: justify; */
+    letter-spacing: 4.5px;
+    text-transform: uppercase;
+}
+
+.main-info_info {
+    /* padding: ; */
+    width: 504px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+}
+
+.main-info_btn__button {
+    width: 184px;
+    height: 46px;
+    background-color: #00AFDB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.main-info_btn__button:hover {
+    background-color: #ffffff;
+    cursor: pointer; 
+    color: #00AFDB;
+}
+
+.main-info_social {
+    width: 170px;
+    height: 20px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-info_social img {
+    width: 20px;
+}
+
+.main-info_social img:hover {
+    outline: 2px solid #00AFDB;
+    cursor: pointer;
 }
