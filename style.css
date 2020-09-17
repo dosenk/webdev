@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1420px;
+}
+
+header {
+    position: absolute;
+    width: 1420px;
+    z-index: 1000;
+}
+
+menu {
+    margin: 0 auto;
+    width: 580px;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+menu a:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+main {
+    width: 100%;
+    position: absolute;
+    height: 744px;
+    background-image: url(/assets/notebook.png);
+}
