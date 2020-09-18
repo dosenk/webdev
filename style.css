@@ -420,6 +420,7 @@ main {
 .subscribe_main__form input:nth-child(1) {
   width: 340px;
   height: 100%;
+  padding-left: 10px;
 }
 
 .subscribe_main__form input:nth-child(2) {
@@ -429,6 +430,7 @@ main {
   background-image: url(/assets/images/fa-check.png);
   background-repeat: no-repeat;
   background-position: center;
+  
 }
 
 .subscribe_main__form input:nth-child(2):hover {
@@ -436,5 +438,159 @@ main {
   cursor: pointer;
   background-color: #ffffff;
   outline: 1px solid #00afdb;
-  outline-offset: -1px;
+  outline-offset: -2px;
+}
+
+/**************************** download ***************************/
+
+.download {
+  height: 468px;
+  background-color: #F5F6F7;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download_main {
+  width: 483px;
+  height: 168px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+
+.download_main p{
+  margin: 0;
+}
+
+.download_main__tagline {
+  width: 100%;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #373737;
+  text-align: center;
+}
+
+.download_main__text {
+  width: 100%;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #4E4E4E;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.download_btn {
+  width: 188px;
+  height: 50px;
+  margin: 0 15px;
+  padding: 0;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+}
+
+.download_btn span:nth-child(1):hover {
+  background-color: #FFFFFF;
+  color: #00AFDB;
+
+}
+
+.download_btn span:nth-child(1) {
+  width: 129px;
+  height: 50px;
+  background-color: #00AFDB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download_btn span:nth-child(2) {
+  display: block;
+  width: 59px;
+  height: 50px;
+  background-color: #009CC2;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.download_btn span:nth-child(2):hover {
+  outline: 1px solid #009CC2;
+  outline-offset: -2px;
+  background-color: #FFFFFF;
+}
+
+.download_main__btn__aplle span:nth-child(2) {
+  background-image: url(/assets/images/icon-apple.png);
+}
+
+.download_main__btn__aplle span:nth-child(2):hover {
+  background-image: url(/assets/images/icon-apple_hover.png);
+}
+
+.download_main__btn__pmarket span:nth-child(2) {
+  background-image: url(/assets/images/icon-android.png);
+}
+
+.download_main__btn__pmarket span:nth-child(2):hover {
+  background-image: url(/assets/images/icon-android_hover.png);
+}
+
+/***************************** footer ***************************/
+
+footer {
+  height: 184px;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.footer_nav, .footer_nav a{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FFFFFF;
+  opacity: 0.98;
+  text-decoration: none;
+}
+
+.footer_nav a:hover {
+  text-decoration: underline;
+}
+
+.footer_nav li {
+  display: inline; 
+  list-style-type: none;
+  margin-right: 19px;
+}
+
+.footer_logo {
+  width: 44px;
+  height: 45px;
+  background: url(/assets/images/logo.png) no-repeat;
+}
+
+.footer_copyright {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #818181;
 }
