@@ -1,13 +1,37 @@
 @font-face {
-  font-family: Roboto; /* Имя шрифта */
+  font-family: Roboto-Regular; /* Имя шрифта */
   src: url(/assets/fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Roboto-Bold; /* Имя шрифта */
+  src: url(/assets/fonts/Roboto-Bold.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: Roboto-Black; /* Имя шрифта */
+  src: url(/assets/fonts/Roboto-Black.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: Roboto-Light; /* Имя шрифта */
+  src: url(/assets/fonts/Roboto-Light.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: Roboto-Medium; /* Имя шрифта */
+  src: url(/assets/fonts/Roboto-Medium.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: Roboto-Thin; /* Имя шрифта */
+  src: url(/assets/fonts/Roboto-Thin.ttf); /* Путь к файлу со шрифтом */
 }
 
 body {
   margin: 0 auto;
   padding: 0;
   width: 1600px;
-  font-family: Roboto;
+  font-family: Roboto-Bold;
 }
 
 header {
@@ -19,8 +43,8 @@ header {
 menu {
   margin: 0 auto;
   padding: 0;
-  width: 597px;
-  height: 95px;
+  width: 596px;
+  height: 96px;
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
@@ -45,21 +69,26 @@ menu a:first-child {
 
 menu a:nth-child(2) {
   width: 54px;
-  margin-left: 84px;
+  margin-left: 85px;
 }
 
 menu a:nth-child(3) {
-  margin-left: 100px;
+  margin-left: 99px;
+}
+
+menu img {
+  position: absolute;
+  top: 25px;
 }
 
 menu a:nth-child(4) {
   width: 52px;
-  margin-left: 100px;
+  margin-left: 145px;
 }
 
 menu a:nth-child(5) {
   width: 26px;
-  margin-left: 84px;
+  margin-left: 83px;
 }
 
 menu a:hover {
@@ -68,9 +97,13 @@ menu a:hover {
 }
 
 .active {
-  text-decoration: underline;
+  text-decoration: none;
   height: 21px;
   opacity: 1;
+  /* padding-bottom: 1px; */
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: -1px;
+  text-transform: capitalize;
 }
 
 /*************** main ****************/
@@ -84,7 +117,7 @@ main {
 
 .main-info {
   position: relative;
-  top: 168px;
+  top: 166px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -92,29 +125,37 @@ main {
   font-style: normal;
 }
 .main-info_tagline {
-  width: 730px;
+  width: 733px;
+  margin-left: 5px;
   text-align: justify;
 }
 .main-info_tagline p {
-  /* padding: ; */
-  width: 730px;
+  font-family: "Roboto-Medium";
+  font-style: normal;
   font-weight: 900;
   font-size: 64px;
   line-height: 75px;
-  /* display: flex; */
-  /* align-items: center; */
-  /* text-align: justify; */
   letter-spacing: 4.5px;
   text-transform: uppercase;
+  color: #ffffff;
+  margin: 64px 0 0 0;
+}
+
+.main-info_tagline p:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
 
 .main-info_info {
-  /* padding: ; */
-  width: 504px;
+  font-family: "Roboto-Light";
+  width: 448px;
   font-weight: normal;
   font-size: 18px;
   line-height: 140%;
   text-align: center;
+  margin-top: -71px;
+  letter-spacing: 0.1px;
 }
 
 .button {
@@ -131,7 +172,12 @@ main {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  margin: 11px 2px 0 0;
 }
+.info_btn__button p {
+  padding-top: 2px;
+}
+
 .button:hover {
   background-color: #ffffff;
   cursor: pointer;
@@ -141,7 +187,7 @@ main {
 .main-info_social {
   width: 170px;
   height: 20px;
-  margin-top: 100px;
+  margin-top: 183px;
   display: flex;
   justify-content: space-between;
 }
@@ -430,7 +476,6 @@ main {
   background-image: url(/assets/images/fa-check.png);
   background-repeat: no-repeat;
   background-position: center;
-  
 }
 
 .subscribe_main__form input:nth-child(2):hover {
@@ -445,7 +490,7 @@ main {
 
 .download {
   height: 468px;
-  background-color: #F5F6F7;
+  background-color: #f5f6f7;
   font-style: normal;
   display: flex;
   justify-content: center;
@@ -462,7 +507,7 @@ main {
   justify-content: center;
 }
 
-.download_main p{
+.download_main p {
   margin: 0;
 }
 
@@ -482,7 +527,7 @@ main {
   font-weight: normal;
   font-size: 14px;
   line-height: 140%;
-  color: #4E4E4E;
+  color: #4e4e4e;
   display: flex;
   align-items: center;
   text-align: center;
@@ -499,20 +544,19 @@ main {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   display: flex;
 }
 
 .download_btn span:nth-child(1):hover {
-  background-color: #FFFFFF;
-  color: #00AFDB;
-
+  background-color: #ffffff;
+  color: #00afdb;
 }
 
 .download_btn span:nth-child(1) {
   width: 129px;
   height: 50px;
-  background-color: #00AFDB;
+  background-color: #00afdb;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -522,15 +566,15 @@ main {
   display: block;
   width: 59px;
   height: 50px;
-  background-color: #009CC2;
+  background-color: #009cc2;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .download_btn span:nth-child(2):hover {
-  outline: 1px solid #009CC2;
+  outline: 1px solid #009cc2;
   outline-offset: -2px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .download_main__btn__aplle span:nth-child(2) {
@@ -559,13 +603,13 @@ footer {
   justify-content: space-between;
 }
 
-
-.footer_nav, .footer_nav a{
+.footer_nav,
+.footer_nav a {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 140%;
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 0.98;
   text-decoration: none;
 }
@@ -575,7 +619,7 @@ footer {
 }
 
 .footer_nav li {
-  display: inline; 
+  display: inline;
   list-style-type: none;
   margin-right: 19px;
 }
