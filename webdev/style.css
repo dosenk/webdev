@@ -640,6 +640,7 @@ footer {
 
 .footer_nav,
 .footer_nav a {
+  font-family: Roboto-Light;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -647,6 +648,10 @@ footer {
   color: #ffffff;
   opacity: 0.98;
   text-decoration: none;
+}
+.footer_nav {
+  margin-left: 120px;
+  margin-top: -17px;
 }
 
 .footer_nav a:hover {
@@ -656,20 +661,25 @@ footer {
 .footer_nav li {
   display: inline;
   list-style-type: none;
-  margin-right: 19px;
+  margin-right: 16px;
 }
 
 .footer_logo {
   width: 44px;
   height: 45px;
   background: url(/webdev/assets/images/logo.png) no-repeat;
+  margin-left: -80px;
+  margin-top: -20px;
 }
 
 .footer_copyright {
+  font-family: Roboto-Light;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 140%;
   text-align: center;
   color: #818181;
+  margin-top: -18px;
+  margin-right: 162px;
 }
