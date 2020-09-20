@@ -178,8 +178,12 @@ main {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+}
+
+.main-info_btn__button {
   margin: 12px 0px 0 0;
 }
+
 .info_btn__button p {
   padding-top: 2px;
 }
@@ -218,11 +222,12 @@ main {
 
 .design_info {
   width: 407px;
-  height: 233px;
-  margin: 0 124px;
+  height: 250px;
+  margin: 0px 124px;
 }
 
 .design_info__tagline {
+  width: 380px;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -234,26 +239,35 @@ main {
   color: #373737;
 }
 
+.design_info p {
+  margin: 0;
+} 
+
 .design_info__text {
+  font-family: Roboto-Medium;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 145%;
   color: #4e4e4e;
+  margin-top: 21px;
 }
 
 .design_info_btn__button {
+  margin-top: 30px;
   color: #ffffff;
 }
-.design_info_btn__button:hover {
-  outline: 1px solid #00afdb;
-  outline-offset: -1px;
+.button:hover {
+  /* outline: 1px solid #00afdb;
+  outline-offset: -1px; */
+  background-color: #009CC2;
+  color: #ffffff;
 }
 
 .design_foto {
   width: 407px;
   height: 582px;
-  margin: 0 124px;
+  margin: -20px 123px 0 124px;
   background-image: url(/webdev/assets/images/design_image.png);
 }
 
