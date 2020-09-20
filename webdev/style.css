@@ -405,21 +405,23 @@ main {
 
 .implement {
   height: 842px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .implement_foto {
+  float: left;
   width: 407px;
   height: 582px;
-  margin-right: 139px;
+  margin-left: 269px;
+  margin-top: 120px;
   background: url(/webdev/assets/images/implement_img.png);
 }
 
 .implement_info {
-  width: 407px;
-  height: 184px;
+  float: left;
+    width: 407px;
+    height: 190px;
+    margin-top: 320px;
+    margin-left: 138px;
 }
 
 .implement_info p {
@@ -439,16 +441,18 @@ main {
 }
 
 .implement_info__text {
+  font-family: Roboto-Medium;
   margin-top: 20px;
   margin-bottom: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 145%;
   color: #4e4e4e;
 }
 
 .implement_info_btn__button {
+  margin-top: 1px;
   color: #ffffff;
 }
 
@@ -460,16 +464,17 @@ main {
 /************************** subscribe ***********************/
 
 .subscribe {
-  height: 598px;
-  background: url(/webdev/assets/images/subscribe_img.png) no-repeat;
+  height: 524px;
+  background: url(/webdev/assets/images/subscribe.png) no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-position: top;
 }
 
 .subscribe_main {
   width: 406px;
-  height: 104px;
+  height: 171px;
 }
 
 .subscribe_main__info {
@@ -481,6 +486,7 @@ main {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .subscribe_main__form {
@@ -498,7 +504,7 @@ main {
 .subscribe_main__form input:nth-child(1) {
   width: 340px;
   height: 100%;
-  padding-left: 10px;
+  padding-left: 24px;
 }
 
 .subscribe_main__form input:nth-child(2) {
@@ -511,11 +517,8 @@ main {
 }
 
 .subscribe_main__form input:nth-child(2):hover {
-  background-image: url(/webdev/assets/images/fa-check_hover.png);
   cursor: pointer;
-  background-color: #ffffff;
-  outline: 1px solid #00afdb;
-  outline-offset: -2px;
+  background-color: #009CC2;
 }
 
 /**************************** download ***************************/
