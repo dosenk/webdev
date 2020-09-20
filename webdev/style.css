@@ -524,7 +524,7 @@ main {
 /**************************** download ***************************/
 
 .download {
-  height: 468px;
+  height: 464px;
   background-color: #f5f6f7;
   font-style: normal;
   display: flex;
@@ -534,12 +534,12 @@ main {
 
 .download_main {
   width: 483px;
-    height: 228px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: center;
+  height: 226px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
 }
 
 .download_main p {
@@ -559,7 +559,7 @@ main {
 
 .download_main__text {
   font-family: Roboto-Medium;
-  margin-top: -70px;
+  margin-top: -68px;
   width: 100%;
   font-weight: normal;
   font-size: 14px;
@@ -588,13 +588,13 @@ main {
 }
 
 .download_main__btn__aplle {
-  left: -14px;
-    bottom: 64px;
+  left: -15px;
+  bottom: 61px;
 }
 
 .download_main__btn__pmarket  {
   left: 15px;
-    bottom: 64px;
+  bottom: 61px;
 }
 
 
