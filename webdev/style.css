@@ -372,7 +372,7 @@ main {
 .slider_images__prev:hover,
 .slider_images__next:hover {
   cursor: pointer;
-  outline: 1px solid #00afdb;
+  opacity: 0.5;
 }
 
 .slider_images__items {
@@ -534,12 +534,12 @@ main {
 
 .download_main {
   width: 483px;
-  height: 168px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: center;
+    height: 228px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
 }
 
 .download_main p {
@@ -558,20 +558,24 @@ main {
 }
 
 .download_main__text {
+  font-family: Roboto-Medium;
+  margin-top: -70px;
   width: 100%;
   font-weight: normal;
   font-size: 14px;
-  line-height: 140%;
+  line-height: 143%;
   color: #4e4e4e;
   display: flex;
   align-items: center;
   text-align: center;
+  letter-spacing: -0.05px;
 }
 
 .download_btn {
-  width: 188px;
-  height: 50px;
-  margin: 0 15px;
+  position: relative;
+  width: 186px;
+  height: 46px;
+
   padding: 0;
   text-decoration: none;
   font-style: normal;
@@ -583,14 +587,24 @@ main {
   display: flex;
 }
 
+.download_main__btn__aplle {
+  left: -14px;
+    bottom: 64px;
+}
+
+.download_main__btn__pmarket  {
+  left: 15px;
+    bottom: 64px;
+}
+
+
 .download_btn span:nth-child(1):hover {
-  background-color: #ffffff;
-  color: #00afdb;
+  background-color: #009CC2;
 }
 
 .download_btn span:nth-child(1) {
-  width: 129px;
-  height: 50px;
+  width: 127px;
+  height: 46px;
   background-color: #00afdb;
   display: flex;
   justify-content: center;
@@ -600,32 +614,18 @@ main {
 .download_btn span:nth-child(2) {
   display: block;
   width: 59px;
-  height: 50px;
+  height: 46px;
   background-color: #009cc2;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.download_btn span:nth-child(2):hover {
-  outline: 1px solid #009cc2;
-  outline-offset: -2px;
-  background-color: #ffffff;
 }
 
 .download_main__btn__aplle span:nth-child(2) {
   background-image: url(/webdev/assets/images/icon-apple.png);
 }
 
-.download_main__btn__aplle span:nth-child(2):hover {
-  background-image: url(/webdev/assets/images/icon-apple_hover.png);
-}
-
 .download_main__btn__pmarket span:nth-child(2) {
   background-image: url(/webdev/assets/images/icon-android.png);
-}
-
-.download_main__btn__pmarket span:nth-child(2):hover {
-  background-image: url(/webdev/assets/images/icon-android_hover.png);
 }
 
 /***************************** footer ***************************/
