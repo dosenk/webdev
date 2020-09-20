@@ -1,30 +1,30 @@
 @font-face {
   font-family: Roboto-Regular; /* Имя шрифта */
-  src: url(/assets/fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
+  src: url(/webdev/assets/fonts/Roboto-Regular.ttf); /* Путь к файлу со шрифтом */
 }
 @font-face {
   font-family: Roboto-Bold; /* Имя шрифта */
-  src: url(/assets/fonts/Roboto-Bold.ttf); /* Путь к файлу со шрифтом */
+  src: url(/webdev/assets/fonts/Roboto-Bold.ttf); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
   font-family: Roboto-Black; /* Имя шрифта */
-  src: url(/assets/fonts/Roboto-Black.ttf); /* Путь к файлу со шрифтом */
+  src: url(/webdev/assets/fonts/Roboto-Black.ttf); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
   font-family: Roboto-Light; /* Имя шрифта */
-  src: url(/assets/fonts/Roboto-Light.ttf); /* Путь к файлу со шрифтом */
+  src: url(/webdev/assets/fonts/Roboto-Light.ttf); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
   font-family: Roboto-Medium; /* Имя шрифта */
-  src: url(/assets/fonts/Roboto-Medium.ttf); /* Путь к файлу со шрифтом */
+  src: url(/webdev/assets/fonts/Roboto-Medium.ttf); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
   font-family: Roboto-Thin; /* Имя шрифта */
-  src: url(/assets/fonts/Roboto-Thin.ttf); /* Путь к файлу со шрифтом */
+  src: url(/webdev/assets/fonts/Roboto-Thin.ttf); /* Путь к файлу со шрифтом */
 }
 
 body {
@@ -38,6 +38,7 @@ header {
   position: absolute;
   width: 1600px;
   z-index: 1000;
+  font-family: Roboto-Light;
 }
 
 menu {
@@ -65,15 +66,18 @@ menu a {
 
 menu a:first-child {
   width: 38px;
+  margin-left: 1px
 }
 
 menu a:nth-child(2) {
   width: 54px;
-  margin-left: 85px;
+    margin-left: 85px;
 }
 
 menu a:nth-child(3) {
   margin-left: 99px;
+    width: 44px;
+    height: 45px;
 }
 
 menu img {
@@ -83,12 +87,12 @@ menu img {
 
 menu a:nth-child(4) {
   width: 52px;
-  margin-left: 145px;
+  margin-left: 100px;
 }
 
 menu a:nth-child(5) {
   width: 26px;
-  margin-left: 83px;
+  margin-left: 84px;
 }
 
 menu a:hover {
@@ -112,7 +116,7 @@ main {
   /* width: 1600px; */
   /* position: relative; */
   height: 744px;
-  background-image: url(/assets/images/notebook.png);
+  background-image: url(/webdev/assets/images/notebook.png);
 }
 
 .main-info {
@@ -248,7 +252,7 @@ main {
   width: 407px;
   height: 582px;
   margin: 0 124px;
-  background-image: url(/assets/images/design_image.png);
+  background-image: url(/webdev/assets/images/design_image.png);
 }
 
 /********************* slider ***********************/
@@ -278,7 +282,7 @@ main {
 .slider_info__img {
   width: 45px;
   height: 45px;
-  background-image: url(/assets/images/slider_img.png);
+  background-image: url(/webdev/assets/images/slider_img.png);
 }
 
 .slider_info__tagline {
@@ -326,14 +330,14 @@ main {
 .slider_images__prev {
   width: 14px;
   height: 14px;
-  background-image: url(/assets/images/slider_prev.png);
+  background-image: url(/webdev/assets/images/slider_prev.png);
   background-repeat: no-repeat;
 }
 
 .slider_images__next {
   width: 14px;
   height: 14px;
-  background-image: url(/assets/images/slider_next.png);
+  background-image: url(/webdev/assets/images/slider_next.png);
   background-repeat: no-repeat;
 }
 
@@ -358,15 +362,15 @@ main {
 }
 
 .item_1 {
-  background: url(/assets/images/slider_img_1.png) no-repeat;
+  background: url(/webdev/assets/images/slider_img_1.png) no-repeat;
 }
 
 .item_2 {
-  background: url(/assets/images/slider_img_2.png) no-repeat;
+  background: url(/webdev/assets/images/slider_img_2.png) no-repeat;
 }
 
 .item_3 {
-  background: url(/assets/images/slider_img_3.png) no-repeat;
+  background: url(/webdev/assets/images/slider_img_3.png) no-repeat;
 }
 
 /**************************** implement *************************/
@@ -382,7 +386,7 @@ main {
   width: 407px;
   height: 582px;
   margin-right: 139px;
-  background: url(/assets/images/implement_img.png);
+  background: url(/webdev/assets/images/implement_img.png);
 }
 
 .implement_info {
@@ -429,7 +433,7 @@ main {
 
 .subscribe {
   height: 598px;
-  background: url(/assets/images/subscribe_img.png) no-repeat;
+  background: url(/webdev/assets/images/subscribe_img.png) no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -473,13 +477,13 @@ main {
   width: 66px;
   height: 100%;
   background-color: #00afdb;
-  background-image: url(/assets/images/fa-check.png);
+  background-image: url(/webdev/assets/images/fa-check.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .subscribe_main__form input:nth-child(2):hover {
-  background-image: url(/assets/images/fa-check_hover.png);
+  background-image: url(/webdev/assets/images/fa-check_hover.png);
   cursor: pointer;
   background-color: #ffffff;
   outline: 1px solid #00afdb;
@@ -578,19 +582,19 @@ main {
 }
 
 .download_main__btn__aplle span:nth-child(2) {
-  background-image: url(/assets/images/icon-apple.png);
+  background-image: url(/webdev/assets/images/icon-apple.png);
 }
 
 .download_main__btn__aplle span:nth-child(2):hover {
-  background-image: url(/assets/images/icon-apple_hover.png);
+  background-image: url(/webdev/assets/images/icon-apple_hover.png);
 }
 
 .download_main__btn__pmarket span:nth-child(2) {
-  background-image: url(/assets/images/icon-android.png);
+  background-image: url(/webdev/assets/images/icon-android.png);
 }
 
 .download_main__btn__pmarket span:nth-child(2):hover {
-  background-image: url(/assets/images/icon-android_hover.png);
+  background-image: url(/webdev/assets/images/icon-android_hover.png);
 }
 
 /***************************** footer ***************************/
@@ -627,7 +631,7 @@ footer {
 .footer_logo {
   width: 44px;
   height: 45px;
-  background: url(/assets/images/logo.png) no-repeat;
+  background: url(/webdev/assets/images/logo.png) no-repeat;
 }
 
 .footer_copyright {
