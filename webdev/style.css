@@ -142,6 +142,13 @@ main {
   margin-left: 5px;
   text-align: justify;
 }
+
+@-moz-document url-prefix() {
+  .main-info_tagline {
+    width: 759px;
+  }
+}
+
 .main-info_tagline p {
   font-family: "Roboto-Bold";
   font-style: normal;
@@ -632,12 +639,27 @@ main {
   background-position: center;
 }
 
+.download_btn span:nth-child(2):hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  outline: 1px solid #009cc2;
+  outline-offset: -1px;
+}
+
 .download_main__btn__aplle span:nth-child(2) {
   background-image: url(/assets/images/icon-apple.png);
 }
 
+.download_main__btn__aplle span:nth-child(2):hover {
+  background-image: url(/assets/images/icon-apple_hover.png);
+}
+
 .download_main__btn__pmarket span:nth-child(2) {
   background-image: url(/assets/images/icon-android.png);
+}
+
+.download_main__btn__pmarket span:nth-child(2):hover {
+  background-image: url(/assets/images/icon-android_hover.png);
 }
 
 /***************************** footer ***************************/
